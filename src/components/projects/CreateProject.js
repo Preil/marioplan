@@ -4,7 +4,6 @@ import {createProject} from '../../store/actions/projectActions.js'
 
 class CreateProject extends Component {
   state = {
-    id:'',
     title: '',
     content: ''
   };
@@ -16,9 +15,7 @@ class CreateProject extends Component {
   };
   handleSubmit = (e) => {
     e.preventDefault();
-    const newProject=this.state;
-    newProject.id = Math.random();
-    this.props.createProject(newProject);
+    this.props.createProject(this.state);
     this.props.history.push('/');
   };
 
