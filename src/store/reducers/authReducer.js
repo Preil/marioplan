@@ -20,7 +20,6 @@ const authReducer = (state = initState, action) => {
       console.log('signout');
       return state;
     default:
-      console.log('I am authReducer')
       return state;
   }
 };
