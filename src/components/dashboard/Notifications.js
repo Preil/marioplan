@@ -10,7 +10,6 @@ const Notifications = (props) => {
           <span className="card-title">Notifications</span>
           <ul className="notification">
             {notifications && notifications.map(item => {
-              console.log('notification time', item.time)
               return (
                 <li key={item.id}>
                   <span className="pink-text">{item.user} </span>
