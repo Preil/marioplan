@@ -1,0 +1,10 @@
+To deploy project to firebase hosting:
+
+npm run build
+
+- it will create build folder
+then copy all from build folder to dist folder (firebase was configured to deploy from dist)
+
+firebase deploy
+
+- it will deploy app to firebase hosting.
